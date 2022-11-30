@@ -1,0 +1,4 @@
+gym
+ale-py
+Pygame
+opencv-contrib-python
