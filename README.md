@@ -13,7 +13,13 @@ Group members: Cade, Quan, and Carrington
 Note: full_action_space=False (to fit with action space of Asteroids game): env.action_space=Discrete(14). How to get value from Discrete class?
 
 ## Instruction:
-After publicized our repo:
+### Install locally: [basic instruction](https://brosa.ca/blog/ale-release-v0.7)
+1. Extract Roms.rar inside roms/ ([Get ROMs](http://www.atarimania.com/rom_collection_archive_atari_2600_roms.html))
+1. `AutoROM --install-dir roms/Roms` ([AutoROM](https://github.com/Farama-Foundation/AutoROM))
+1. `AutoROM --accept-license`
+1. `ale-import-roms roms/Roms`
+
+### On Colab: After publicized our repo:
 1. Create a file on Colab. Run the followings:
     ```
     !git clone https://github.com/cadesmith/AsteroidsML.git
