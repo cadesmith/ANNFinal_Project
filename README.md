@@ -16,7 +16,7 @@ Note: full_action_space=False (to fit with action space of Asteroids game): env.
 ### Install locally: [basic instruction](https://brosa.ca/blog/ale-release-v0.7)
 1. Method 1:
     1. Create dir `roms/`
-    1. type `pip install autorom` then `AutoROM`
+    1. type `pip install autorom` then `AutoROM` ([AutoROM](https://github.com/Farama-Foundation/AutoROM))
     1. Type `AutoROM --install-dir roms/`
     1. Type `AutoROM --accept-license`
     1. In code, just import `gym`, `ale_py`.
