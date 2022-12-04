@@ -1,4 +1,6 @@
 gym
-ale-py
-Pygame
-opencv-contrib-python
+autorom
+pygame
+numpy
+matplotlib
+tqdm
