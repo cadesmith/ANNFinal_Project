@@ -20,7 +20,7 @@
 ## Introduction
 Our primary interest was to explore how reinforcement learning models are used to create models (such as AlphaGo) that are able to automatically play and win various games on their own. 
 
-We wanted to focus specifically on one type of RLmodel: the Deep Q Network. This model is one of the most commonly used 
+We wanted to focus specifically on one type of RLmodel: the Deep Q Network published by Google DeepMind in 2015. This model is one of the most commonly used in reinforcement learning 
 
 Our main focuses of this project are comparing affect these factors on model's performance:
 * Policies
@@ -30,7 +30,7 @@ Our main focuses of this project are comparing affect these factors on model's p
 
 ## Data
 Our RL model is unsupervised, so we add new data, which is generated during the training loop, into dataset use those data as ground truth to train model. To get the data, we use [OpenAI's gym](https://www.gymlibrary.dev/) library to create an Asteroids game. The advantages of this library is that it returns the game screen (state/observation), current score, game status (game is done or not), and other information such as remaining lives. Atari games are typically displayed as 210 x 160 pixel images with a 128-color palatte running at a rate of 60 frames per second. This obviously means that
-using the raw Atari data as input would be potentially very computationaly demanding, so the data is preprocessed to make it easier to interpret.
+using the raw Atari data as input would be potentially very computationaly demanding, so the data is preprocessed to make it easier to interpret. Each frame is tranformed into an 84 x 84 pixel image in either grayscale or RGB. 
 
 ## Method
 
