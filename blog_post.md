@@ -18,39 +18,26 @@
 ---
 
 ## Introduction
-Our primary interest was to explore how reinforcement learning models are used to create models (such as AlphaGo) that are able to automatically play and win various games on their own. 
-
-We wanted to focus specifically on one type of RLmodel: the Deep Q Network published by Google DeepMind in 2015. This model is one of the most commonly used in reinforcement learning 
+Our primary interest was to explore how reinforcement learning models are used to create models (such as AlphaGo) that are able to automatically play and win various games on their own. We did this by 
 
 Our main focuses of this project are comparing affect these factors on model's performance:
 * Policies
-* Network architecture:
-    * RGB vs gray images
-    * Depth of network
+* Depth of network
+* RL Agents
 
 ## Data
-Our RL model is unsupervised, so we add new data, which is generated during the training loop, into dataset use those data as ground truth to train model. To get the data, we use [OpenAI's gym](https://www.gymlibrary.dev/) library to create an Asteroids game. The advantages of this library is that it returns the game screen (state/observation), current score, game status (game is done or not), and other information such as remaining lives. Atari games are typically displayed as 210 x 160 pixel images with a 128-color palatte running at a rate of 60 frames per second. This obviously means that
+Our RL model is unsupervised, so we add new data, which is generated during the training loop, into dataset use those data as ground truth to train the model. To get the data, we use [OpenAI's gym](https://www.gymlibrary.dev/) library to create an Asteroids game. The advantages of this library is that it returns the game screen (state/observation), current score, game status (game is done or not), and other information such as remaining lives. Atari games are typically displayed as 210 x 160 pixel images with a 128-color palatte running at a rate of 60 frames per second. This obviously means that
 using the raw Atari data as input would be potentially very computationaly demanding, so the data is preprocessed to make it easier to interpret. Each frame is tranformed into an 84 x 84 pixel image in either grayscale or RGB. 
 
 ## Method
 
 ### Training
 Input: the game screen in color with shape 
-Output: action that we should make. There are 14 actions in total according to gym's [documentation](https://www.gymlibrary.dev/environments/atari/asteroids/#actions)
+Output: action that we should make. There are 2 actions in total according to gym's [documentation] (left and right)
 
 
 ## Results
-Compare a trained model vs choosing randomly
-
-<img src='./README_files/random_12fps.gif' title='' width='' alt='' />
-
-Result if we choose randomly (max score of 47 for 10 episodes)
-
-<br><br>
-
-<img src='./README_files/trained_12fps.gif' title='' width='' alt='' />
-
-Result if we use trained DQN model (trained for 2500 episodes) (max score of 192 for 10 episodes)
+(to be updated)
 
 ## Conclusion
 (to be updated)
