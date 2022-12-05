@@ -13,5 +13,7 @@ Different Agents:
 3. Normalized Advantage Function (NAF)
 4. Combining Evolutionary (CM)
 5. State Action Reward State Action (SARSA)
-6. Create Agent from Scratch?
 7. Dueling Deep Q Network (DQN)
+
+Agent Layers
+1. 
