@@ -40,7 +40,17 @@ Output: action that we should make. There are 14 actions in total according to g
 
 
 ## Results
-(to be updated)
+Compare a trained model vs choosing randomly
+
+<img src='./README_files/random_12fps.gif' title='' width='' alt='' />
+
+Result if we choose randomly (max score of 47 for 10 episodes)
+
+<br><br>
+
+<img src='./README_files/trained_12fps.gif' title='' width='' alt='' />
+
+Result if we use trained DQN model (trained for 2500 episodes) (max score of 192 for 10 episodes)
 
 ## Conclusion
 (to be updated)
