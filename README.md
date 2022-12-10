@@ -1,9 +1,9 @@
-# Reinforcement Learning for Asteroids game ([play](https://freeasteroids.org/))
+# Reinforcement Learning for Cartpole game
 
-Group members: Cade, Quan, and Carrington
+Group members: Cade, Quan, and Carrington ([Blogpost on Medium](https://medium.com/@cp108/understanding-reinforcement-learning-with-a-sarsa-based-model-b62dffe28a42))
 
 ## Plan:
-1. Game src code: Use Gym for [game environment](https://www.gymlibrary.dev/environments/atari/asteroids/)
+1. Game src code: Use Gym for [game environment](https://www.gymlibrary.dev/environments/classic_control/cart_pole/)
 1. Reward function
 1. Create [Q-model on Keras](https://keras.io/examples/rl/deep_q_network_breakout/)
 1. If q-model ineffective / easy to implement:
@@ -12,26 +12,11 @@ Group members: Cade, Quan, and Carrington
 
 Note: full_action_space=False (to fit with action space of Asteroids game): env.action_space=Discrete(14). How to get value from Discrete class?
 
-## Instruction:
 
-***Must***: Install required libraries:
-* `pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116` ([Official page](https://pytorch.org/get-started/locally/))
-* `pip install -r requirements.txt`
 
-### Install locally: [basic instruction](https://brosa.ca/blog/ale-release-v0.7)
-* Method 1:
-    1. Create dir `roms/`
-    1. In terminal, type:
-        1. `AutoROM` ([AutoROM](https://github.com/Farama-Foundation/AutoROM))
-        1. `AutoROM --install-dir roms/`
-        1. `AutoROM --accept-license`
-    1. In code, just import `gym`, `ale_py`.
-* Method 2:
-    1. Extract Roms.rar inside roms/ ([Get ROMs](http://www.atarimania.com/rom_collection_archive_atari_2600_roms.html))
-    1. `ale-import-roms roms/Roms` (I dont remember, but there is a youtube instruction, which I also dont remember)
-
-### On Colab: After publicized our repo:
-1. Create a file on Colab. Run the followings:
-    ```
-    !git clone https://github.com/cadesmith/AsteroidsML.git
-    ```
+---
+Files:
+* `SARSA_Greedy.ipynb`: SARSA algorithm with Keras framework (uncomment: `!pip install ...`)
+* `SARSA.ipynb`: SARSA algorithm from scratch. (install `gym` before running notebook)
+* `./README_files/`: gifs of our models
+* `./models/`, `Notes.md`, `asteroids.ipynb`, `blog_post.md`, `requirements.txt`, `sarsa_blog.md`: unimportant files
