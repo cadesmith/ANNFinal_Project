@@ -10,8 +10,6 @@ Group members: Cade, Quan, and Carrington ([Blogpost on Medium](https://medium.c
 1. modify amount of layers and etc.
 2. Try different models and compare effectiveness with Q-model
 
-Note: full_action_space=False (to fit with action space of Asteroids game): env.action_space=Discrete(14). How to get value from Discrete class?
-
 
 
 ---
